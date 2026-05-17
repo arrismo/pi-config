@@ -60,3 +60,8 @@ Reload cmux config with **Cmd+Shift+,** or restart cmux.
 - **Notification hooks** — custom sounds, pane flash, dock badge, menu bar display
 - **Custom shortcuts** — full keybinding overrides for splits, panes, browser, and more
 
+## Inspiration
+
+- [davis7dotsh/my-pi-setup](https://github.com/davis7dotsh/my-pi-setup)
+- [mohak34/opencode-notifier](https://github.com/mohak34/opencode-notifier)
+
