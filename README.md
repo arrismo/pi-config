@@ -74,6 +74,7 @@ Reload cmux config with **Cmd+Shift+,** or restart cmux.
 
 ## Inspiration
 
+- [anomalyco/opencode](https://github.com/anomalyco/opencode)
 - [davis7dotsh/my-pi-setup](https://github.com/davis7dotsh/my-pi-setup)
 - [mohak34/opencode-notifier](https://github.com/mohak34/opencode-notifier)
 
