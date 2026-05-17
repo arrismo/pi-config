@@ -40,8 +40,8 @@ You can also copy files from `extensions/` into `~/.pi/agent/extensions/` manual
 
 - `brutalist-red`
 - `calculus-notebook`
-- `deep-space-constant` (active)
 - `deep-space-constant`
+- `github-dark-default` (active)
 - `solarized-pi`
 - `toxic-green-diner`
 - `vaporwave-pi`
