@@ -38,7 +38,7 @@ You can also copy files from `extensions/` into `~/.pi/agent/extensions/` manual
 
 ## cmux config
 
-This repo also includes `cmux/cmux.json`.
+`cmux/cmux.json` is a [cmux](https://manaflow.ai/cmux) config file using JSONC (JSON with comments). Uncomment any setting to override the cmux UI defaults.
 
 Install it with:
 
@@ -47,10 +47,16 @@ mkdir -p ~/.config/cmux
 cp cmux/cmux.json ~/.config/cmux/cmux.json
 ```
 
-## Notes
+Reload cmux config with **Cmd+Shift+,** or restart cmux.
 
-- `cmux-autotitle` only does anything inside cmux.
-- `notification` currently uses macOS notifications.
-- `clipboard-notify` uses `pbpaste` on macOS and `wl-paste`/`xclip` on Linux.
-- `web-tools` can use `EXA_API_KEY` or `PARALLEL_API_KEY`.
-- No auth or session files are exported here.
+### Configured features
+
+- **cmux-autotitle** — auto-rename cmux tabs and workspaces from your first pi prompt
+- **Agent session auto-resume** — restore previous agent sessions on launch
+- **Claude Code / Cursor / Gemini integration** — coding agent sidebar panels
+- **Terminal link interception** — open URLs from terminal output in the embedded browser
+- **Embedded browser** — system-theme browser with local host allowlist and React Grab
+- **Workspace colors** — 16 named presets with left-rail indicators
+- **Notification hooks** — custom sounds, pane flash, dock badge, menu bar display
+- **Custom shortcuts** — full keybinding overrides for splits, panes, browser, and more
+
