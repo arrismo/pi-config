@@ -29,6 +29,7 @@ You can also copy files from `extensions/` into `~/.pi/agent/extensions/` manual
 - `clipboard-notify`
 - `cmux-autotitle`
 - `exit`
+- `flow-title`
 - `learn-codebase`
 - `notification`
 - `plan-mode`

@@ -13,6 +13,7 @@
     "@earendil-works/pi-ai": "*",
     "@earendil-works/pi-coding-agent": "*",
     "@earendil-works/pi-tui": "*",
+    "@mariozechner/pi-coding-agent": "*",
     "typebox": "*"
   }
 }
