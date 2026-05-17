@@ -36,6 +36,18 @@ You can also copy files from `extensions/` into `~/.pi/agent/extensions/` manual
 - `web-tools`
 - `yeet`
 
+## Themes
+
+- `brutalist-red`
+- `calculus-notebook`
+- `deep-space-constant` (active)
+- `deep-space-constant`
+- `solarized-pi`
+- `toxic-green-diner`
+- `vaporwave-pi`
+
+Set the theme via `/settings` → Theme, or add `"theme": "brutalist-red"` to `~/.pi/agent/settings.json`.
+
 ## cmux config
 
 `cmux/cmux.json` is a [cmux](https://manaflow.ai/cmux) config file using JSONC (JSON with comments). Uncomment any setting to override the cmux UI defaults.

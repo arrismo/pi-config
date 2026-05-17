@@ -1,10 +1,16 @@
 import type { ExtensionAPI, ExtensionContext } from "@earendil-works/pi-coding-agent";
 import { DEFAULT_MAX_BYTES, DEFAULT_MAX_LINES, formatSize, truncateHead } from "@earendil-works/pi-coding-agent";
-import { StringEnum } from "@earendil-works/pi-ai";
 import { Type } from "typebox";
 import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
+
+// ── Helpers ──────────────────────────────────────────────────────────────
+
+/** Typebox string-enum helper (Union of Literals) */
+function StrEnum<T extends readonly string[]>(values: T, opts?: { description?: string }) {
+	return Type.Union(values.map((v) => Type.Literal(v)) as any, opts as any);
+}
 
 const MAX_RESPONSE_SIZE = 5 * 1024 * 1024; // 5MB, matching opencode
 const DEFAULT_TIMEOUT_SECONDS = 30;
@@ -274,7 +280,7 @@ export default function webTools(pi: ExtensionAPI): void {
 		],
 		parameters: Type.Object({
 			url: Type.String({ description: "The URL to fetch content from" }),
-			format: Type.Optional(StringEnum(["text", "markdown", "html"] as const, { description: "Return format. Defaults to markdown." })),
+			format: Type.Optional(StrEnum(["text", "markdown", "html"] as const, { description: "Return format. Defaults to markdown." })),
 			timeout: Type.Optional(Type.Number({ description: "Optional timeout in seconds (max 120)" })),
 		}),
 		async execute(_toolCallId, params, signal) {
@@ -331,8 +337,8 @@ export default function webTools(pi: ExtensionAPI): void {
 		parameters: Type.Object({
 			query: Type.String({ description: "Web search query" }),
 			numResults: Type.Optional(Type.Number({ description: "Number of search results to return (default: 8)" })),
-			livecrawl: Type.Optional(StringEnum(["fallback", "preferred"] as const, { description: "Live crawl mode" })),
-			type: Type.Optional(StringEnum(["auto", "fast", "deep"] as const, { description: "Search type" })),
+			livecrawl: Type.Optional(StrEnum(["fallback", "preferred"] as const, { description: "Live crawl mode" })),
+			type: Type.Optional(StrEnum(["auto", "fast", "deep"] as const, { description: "Search type" })),
 			contextMaxCharacters: Type.Optional(Type.Number({ description: "Maximum characters for LLM-optimized context" })),
 		}),
 		async execute(_toolCallId, params, signal, _onUpdate, ctx) {

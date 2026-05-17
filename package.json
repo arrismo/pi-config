@@ -5,7 +5,8 @@
   "keywords": ["pi-package"],
   "type": "module",
   "pi": {
-    "extensions": ["./extensions"]
+    "extensions": ["./extensions"],
+    "themes": ["./themes"]
   },
   "peerDependencies": {
     "@earendil-works/pi-agent-core": "*",
