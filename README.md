@@ -28,6 +28,7 @@ You can also copy files from `extensions/` into `~/.pi/agent/extensions/` manual
 
 - `clipboard-notify`
 - `cmux-autotitle`
+- `cmux-restart`
 - `exit`
 - `flow-title`
 - `learn-codebase`
@@ -36,18 +37,6 @@ You can also copy files from `extensions/` into `~/.pi/agent/extensions/` manual
 - `update`
 - `web-tools`
 - `yeet`
-
-## Themes
-
-- `brutalist-red`
-- `calculus-notebook`
-- `deep-space-constant`
-- `github-dark-default` (active)
-- `solarized-pi`
-- `toxic-green-diner`
-- `vaporwave-pi`
-
-Set the theme via `/settings` → Theme, or add `"theme": "brutalist-red"` to `~/.pi/agent/settings.json`.
 
 ## cmux config
 
@@ -65,6 +54,7 @@ Reload cmux config with **Cmd+Shift+,** or restart cmux.
 ### Configured features
 
 - **cmux-autotitle** — auto-rename cmux tabs and workspaces from your first pi prompt
+- **cmux-restart** — `/cmux-restart` quits and reopens the macOS cmux app
 - **Agent session auto-resume** — restore previous agent sessions on launch
 - **Claude Code / Cursor / Gemini integration** — coding agent sidebar panels
 - **Terminal link interception** — open URLs from terminal output in the embedded browser

@@ -30,7 +30,7 @@ function buildUpdateArgs(rawArgs: string): string[] {
 }
 
 export default function updateExtension(pi: ExtensionAPI): void {
-	pi.registerCommand("update", {
+	pi.registerCommand("pi-update", {
 		description: "Update pi to the latest release",
 		handler: async (args, ctx) => {
 			const tokens = args.split(/\s+/).filter(Boolean);
