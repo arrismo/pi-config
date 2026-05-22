@@ -31,7 +31,6 @@ You can also copy files from `extensions/` into `~/.pi/agent/extensions/` manual
 - `cmux-restart`
 - `exit`
 - `flow-title`
-- `learn-codebase`
 - `notification`
 - `plan-mode`
 - `update`
