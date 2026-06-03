@@ -26,16 +26,16 @@ You can also copy files from `extensions/` into `~/.pi/agent/extensions/` manual
 
 ## Included extensions
 
-- `clipboard-notify`
-- `cmux-autotitle`
-- `cmux-restart`
-- `exit`
-- `flow-title`
-- `notification`
-- `plan-mode`
-- `update`
-- `web-tools`
-- `yeet`
+- `clipboard-notify` — watches clipboard changes and shows UI notifications
+- `cmux-autotitle` — auto-renames cmux tabs/workspaces from the first prompt
+- `cmux-restart` — adds `/cmux-restart` to restart the macOS cmux app
+- `flow-title` — custom blue gradient session header; commands: `/flow-title`, `/flow-title-builtin`
+- `notification` — sends macOS notifications when agent work completes; command: `/notify-test`
+- `plan-mode` — read-only planning workflow; commands: `/plan`, `/todos`; shortcut: Ctrl+Alt+P
+- `randoms` — adds `/randoms` to choose a random available model and thinking level
+- `update` — adds `/pi-update` to update pi from inside a session
+- `web-tools` — adds `webfetch` and `websearch` tools
+- `yeet` — adds `/yeet` to commit and push safe repository changes
 
 ## cmux config
 
